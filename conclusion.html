@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Conclusion</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dc/3.0.9/dc.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="GoogleChart.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="scripts/crossfilter.js"></script>
+    <script src="//d3js.org/d3.v4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dc/3.0.9/dc.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dc/3.0.9/dc.css">
+    <script src="scripts/charts.js"></script>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src='scripts/theme.js'></script>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.js"
+            integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+            crossorigin="anonymous">
+    </script>
+
+</head>
+<body id="body" class="light-mode">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+		<img class="navbar-brand" src="images/conclusion.png" ></img>
+
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+                <li><a href="Intro.html">Home</a></li> 
+                <li><a href="tableau.html">Countries</a></li>
+                <li><a href="bubble.html">Comparisons</a></li>
+
+				<li class="active" ><a href="Conclusion">Conclusion</a></li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+<div id = 'wrapper' >
+
+
+    <div class="row" style="margin: 0 1em 0 1em;">
+
+            <div id="myCarousel" class="col-md-auto" data-ride="carousel" style="position: relative;">
+
+                <h3>Earth's Average Tempreture</h3>
+                <div class="col-md-auto" id="temp_div" style="width: 100%;position: relative" ></div>
+
+                <h3>Total Forest Area</h3>
+                <div class="col-md-auto" id="forestline_div"></div>
+        </div>
+
+<div class="text-center" style="margin: 1em 0 1em 0;"> 
+			 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1" style="">
+ Information
+  </button>
+
+<div class="collapse" id="collapse1" style="padding: 0 1em 0 1em;">
+  <div class="well" id='tbox'>
+    As we can see the earth's tempreture is increasing specially from 2010 to 2016 and the forest area around the word is decreasing constantly. the forest area data is from 1990 and meanwhile the tempreture kepps increasing constantly in average.
+      the two facts can effect on each other: increasing the tempreture will cause heatwaves that can lead to drying the forests and wild fires which causes the decrease in the the forest area and less forest area causes CO2 increase.
+      Overall, the countries such as China and USA emit the most amount of carbon dioxide, the highest growth rate is form china. according to the charts, th main reason of the increase is first population and then the overall GPD of the country.
+  </div>
+</div>
+<br>
+</div>
+</div>
+<br>
+</div>
+<footer class="container-fluid text-center " style="padding: 0 0 0 0;">
+	<div style="margin-top: 1em; text-align: left;margin-left: 1em;">
+		<label class="switch">
+  <input type="checkbox" onChange="toggleDarkLight()">
+  <span class="slider round"></span>
+</label>
+		Dark Mode
+		</div>
+</footer>
+
+</body>
+</html>
+
