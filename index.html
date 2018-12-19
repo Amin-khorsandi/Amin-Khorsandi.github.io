@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Climate Change</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/dc.css">
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/d3.min.js"></script>
+    <script src="scripts/crossfilter.js"></script>
+    <script src="scripts/d3.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src='scripts/theme.js'></script>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.js"
+            integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+            crossorigin="anonymous">
+    </script>
+</head>
+<body id="body" class="light-mode">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+		<img class="navbar-brand" src="images/home.png" ></img>
+
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+                <li class="active" ><a href="Intro.html">Home</a></li> 
+                <li><a href="tableau.html">Countries</a></li>
+                <li><a href="bubble.html">Correlations</a></li>
+
+				<li><a href="conclusion.html">Conclusion</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div id = 'wrapper' >
+
+<div class="container" style="text-align: center" >
+  <h3>Climate Change </h3>
+  <hr>
+</div>
+
+  <div class="container">
+    <p style="text-align:left">Since the age of Industrial Revolution, the world’s temperature has increased by 1.5° F and led to climate change and damages to the environment. Multiple factors are considered as the causes of this increase, the most important of which can be the carbon dioxide (CO2). The accumulation of CO2 blocks heat from moving out of the atmosphere and increases temperature. The data about the earth temperature, and CO2 have been captured since many years ago. The purpose of this project is to visualize the data about CO2, Earth’s temperature and some of the factors affecting the CO2 increase in forms of different charts and dashboards to find the main possible sources of CO2 increase that caused the global warming.</p>
+    <p style="text-align:left">Data source: The data is gathered from different sources and in some datasets, a cleaning process applied on the data.</p>
+    <ul>
+	  <li><a href="https://data.worldbank.org/indicator/SP.POP.TOTL">Population</a></li>
+	  <li><a href="https://data.worldbank.org/topic/environment?display=map">Forest area</a></li>
+		<li><a href="ourworldindata.org">CO2 Data</a></li>
+		<li><a href="http://berkeleyearth.org/data/" >Tempreture</a></li>
+		<li><a href="https://www.gapminder.org/data/">Income</a></li>
+	  </ul>
+    <p>The system is the agregation of different visualization technologies including: google charts, tableau dashboards, D3.js, and gapminer.</p>
+	  <h4>System guide</h4>
+	  <p>The system containes 4 sections: the first section is the intorductions, the second is a tableau based dashboard to compare the countries by the CO2 emission. The correlation tab is based o gapminer application to find correlations between different factors of CO2 emission.and in the conclusion tab the output of the system will be discussed </p>
+	  <p>hints: The user interface can be dark or light depending on user's prefrences to change the modes there is a switch button in the footer. 
+	  Under each chart or dashboard there is a 'more info..' button and by pressing that, the user can see the description.</p>
+  </div>
+
+<br>
+</div>
+<footer class="container-fluid text-center " style="padding: 0 0 0 0;">
+	<div style="margin-top: 1em; text-align: left;margin-left: 1em;">
+		<label class="switch">
+  <input type="checkbox" onChange="toggleDarkLight()">
+  <span class="slider round"></span>
+</label>
+		Dark Mode
+		</div>
+</footer>
+
+</body>
+</html>
+
